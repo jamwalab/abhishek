@@ -16,7 +16,7 @@ main {
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
 
-  --ajBackground: #d3d3d3;
+  --ajBackground: #e7e7e7;
   --secondary: #636363;
   --ajSecondaryLight: #999999;
   --pText-color: #3d3e4e;
@@ -309,7 +309,7 @@ a {
 
 .webTitle:hover {
   transform: scale(1.1);
-  transition: .5s all;
+  transition: .3s all;
 }
 
 /*Navigation bar*/
@@ -375,17 +375,17 @@ nav a:hover {
 }
 
 .img-preview img {
-  transition: all 1s;
+  transition: all .5s;
   width: 100%;
   object-fit: cover;
   object-position: top;
   opacity: 30%;
   max-height: 300px;
-  border: solid 2px var(--secondary);
+  border: solid 2px var(--pText-color);
 }
 
 .img-preview img:hover {
-  transition: all 2s;
+  transition: all .5s;
   opacity: 80%;
 }
 
@@ -422,7 +422,7 @@ nav a:hover {
 .projectTitle a:hover {
   color: var(--pText-color);
   border-bottom: solid 2px var(--ajSecondaryLight);
-  transition: 1s all;
+  /*transition: 1s all;*/
 }
 
 /*Resume styling*/

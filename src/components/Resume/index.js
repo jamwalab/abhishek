@@ -23,6 +23,10 @@ function Resume() {
           <h6>Certified Cloud Practitioner</h6>
         </div>
         <div>
+          <h5>Birla Institute of Management Technology (July 2011 – June 2013)</h5>
+          <h6>Post Graduate Diploma in Management (International Business) in Operations</h6>
+        </div>
+        <div>
           <h5>University of Mumbai (July 2005 – June 2009)</h5>
           <h6>Bachelor of Engineering - Electronics and Telecommunication</h6>
         </div>

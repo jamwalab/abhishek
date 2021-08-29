@@ -6,30 +6,34 @@ function Portfolio() {
     {
       title: "Smart Fix",
       link: "https://floating-cove-91289.herokuapp.com/",
-      tech: "Node, Express, MySQL, HTML, CSS",
-      image: "smartFix",
-      description: "aaaa"
+      github: "https://github.com/groupsixzerotwo/smart-fix",
+      tech: "Node, Express, Handlebars, API, MySQL, HTML, CSS",
+      image: "smartFix.png",
+      description: "•	A website that helps customers connect with service providers for household repairs and maintenance."
     },
     {
       title: "ETA Tracker",
-      link: "https://floating-cove-91289.herokuapp.com/",
-      tech: "Node",
-      image: "smartFix",
-      description: "aaaa"
+      link: "https://hidden-cliffs-50551.herokuapp.com/",
+      github: "https://github.com/jamwalab/checkEta",
+      tech: "Node, Express, Handlebars, API, Axios, HTML, CSS",
+      image: "etaTracker.png",
+      description: "•	Helps provide estimated time of arrival for shipments arriving at port and moving on rail in bulk."
     },
     {
-      title: "Smart Fix2",
-      link: "https://floating-cove-91289.herokuapp.com/",
-      tech: "Node,CSS",
-      image: "smartFix",
-      description: "aaaa"
+      title: "Calorie Tracker",
+      link: "https://uot-project-grp.github.io/project01-calorie-tracker/",
+      github: "https://github.com/groupsixzerotwo/smart-fix",
+      tech: "HTML / CSS / JS / JQuery",
+      image: "CalTracker.png",
+      description: "•	Allows users to set calorie targets, track daily calorie consumption and track consumption with tables and graphs."
     },
     {
-      title: "Smart Fix3",
-      link: "https://floating-cove-91289.herokuapp.com/",
-      tech: "HTML, CSS",
-      image: "smartFix",
-      description: "aaaa"
+      title: "The Tech Blog",
+      link: "https://pure-eyrie-01841.herokuapp.com/",
+      github: "https://github.com/jamwalab/theTechBlog",
+      tech: "Node, Express, Handlebars, API, MySQL, HTML, CSS",
+      image: "theTechBlog.png",
+      description: "•	Allows users to register, create blog posts and add comments on blogs posted by other users."
     }
   ]
   return(

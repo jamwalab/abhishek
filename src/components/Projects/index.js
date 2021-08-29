@@ -8,7 +8,7 @@ function Projects({allProjects}) {
           <div className='projectTitle'>
             <h4 className="bottomBorder-underline">{project.title}</h4>
             <p>
-              <a href={project.link} target="_blank">
+              <a href={project.github} target="_blank">
                 GitHub
               </a>|
               <a href={project.link} target="_blank">
@@ -20,7 +20,7 @@ function Projects({allProjects}) {
           <p>{project.description}</p>
           <a className="img-preview" href={project.link} target="_blank">
             <img
-              src={require(`../../assets/images/${project.image}.png`).default}
+              src={require(`../../assets/images/${project.image}`).default}
               alt={project.title}
             ></img>
             <div className="img-text">
