@@ -1,14 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import AboutMe from './components/AboutMe';
+import Home from './components/Home';
 import Nav from './components/Nav';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
+import Portfolio from './components/Portfolio';
 
 function App() {
+  const [menuElements] = useState([
+    "Home", "Portfolio", "Contact", "Resume"
+  ]);
+
+  const [pageSelected, setPageSelected] = useState(menuElements[0]);
+
   return (
     <div>
-      <Nav></Nav>
+      <Nav
+        pageSelected={pageSelected}
+        setPageSelected={setPageSelected}
+      ></Nav>
       <main>
-      <AboutMe></AboutMe>
+      {
+      pageSelected === menuElements[0] ? <Home></Home>
+        : pageSelected === menuElements[1] ? <Portfolio></Portfolio>
+        : pageSelected === menuElements[2] ? <Contact></Contact>
+        : <Resume></Resume>
+      }
       </main>
     </div>
   );

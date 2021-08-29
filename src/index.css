@@ -1,7 +1,7 @@
 
 main {
 	margin: 0 auto;
-	max-width: 90%;
+	/*max-width: 90%;*/
   padding: 50px 30px;
 }
 :root {
@@ -15,7 +15,7 @@ main {
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-  --ajBackground: #f7f2e6;
+  --ajBackground: #fffeee;
 }
 
 * {
@@ -28,7 +28,7 @@ body {
 }
 
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-weight: 600;
   line-height: 1.5;
@@ -37,7 +37,7 @@ body {
   background: var(--ajBackground);
   color: var(--dark);
   font-family: Georgia, 'Times New Roman', Times, serif;
-
+  max-width: 80%;
 }
 
 h1,
@@ -46,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -79,6 +79,10 @@ h6 {
 p {
   font-size: 1.1rem;
   margin-top: 0;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 a {
@@ -185,6 +189,12 @@ textarea {
   justify-content: flex-end;
 }
 
+.no-flex-wrap {
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
@@ -218,6 +228,11 @@ textarea {
 .px-2 {
   padding-right: var(--spacing-two);
   padding-left: var(--spacing-two);
+}
+
+.px-5 {
+  padding-right: var(--spacing-five);
+  padding-left: var(--spacing-five);
 }
 
 .py-1 {
@@ -292,4 +307,9 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+.aboutMeProfPic {
+  max-height: 230px;
+  border-radius: 50%;
 }
