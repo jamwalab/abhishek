@@ -6,7 +6,7 @@ const Home = function() {
     <section>
       <article className="flex-row space-between no-flex-wrap">
         <div className="px-2">
-          <img src={profPic} className='aboutMeProfPic'></img>
+          <img src={profPic} className='aboutMeProfPic' alt='Profile'></img>
         </div>
         <h2 className="px-5 text-justify">Hello, my name is Abhishek. I am a Full Stack Developer living in Mississauga, ON.</h2>
       </article>

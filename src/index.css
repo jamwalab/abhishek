@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 main {
 	margin: 0 auto;
-	/*max-width: 90%;*/
-  padding: 50px 30px;
+  padding: 30px 30px;
 }
 :root {
   --primary: #8c54ff;
@@ -15,7 +15,7 @@ main {
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-  --ajBackground: #fffeee;
+  --ajBackground: #d6d6d6;
 }
 
 * {
@@ -36,8 +36,8 @@ body {
   letter-spacing: .1em;
   background: var(--ajBackground);
   color: var(--dark);
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  max-width: 80%;
+  font-family: 'Roboto Slab', serif;
+  max-width: 60%;
 }
 
 h1,
@@ -46,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -189,12 +189,6 @@ textarea {
   justify-content: flex-end;
 }
 
-.no-flex-wrap {
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .mx-1 {
   margin-right: var(--spacing-one);
   margin-left: var(--spacing-one);
@@ -309,7 +303,99 @@ a {
   color: var(--secondary);
 }
 
+.no-flex-wrap {
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .aboutMeProfPic {
+  min-height: 200px;
+  min-width: 200px;
   max-height: 230px;
   border-radius: 50%;
+}
+
+.img-preview {
+  display: flex;
+  position: relative;
+}
+
+.img-preview img {
+  transition: all 1s;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  opacity: 30%;
+  max-height: 300px;
+  border: solid 2px rgb(175, 123, 123);
+}
+
+.img-preview img:hover {
+  transition: all 2s;
+  opacity: 80%;
+}
+
+.img-text {
+  position: absolute;
+  bottom: 30px;
+  padding: 5px 10px 5px 20px;
+  background: rgb(175, 123, 123);
+  color: white;
+}
+
+.img-text p {
+  font-size: 14px;
+}
+
+/*
+.img-container {
+  position: relative;
+}
+
+.img-preview img {
+  transition: all 2s;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  opacity: 30%;
+  max-height: 300px;
+}    
+
+.img-text {
+  position: absolute;
+  bottom: 30px;
+  padding: 5px 10px 5px 20px;
+  background: rgb(175, 123, 123);
+  color: white;
+}
+
+.img-text h3 {
+  font-size: 22px;
+  padding: 0 0 4px 0;
+}
+*/
+
+@media screen and (max-width: 1650px) {
+  body {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  body {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  body {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 95%;
+  }
 }
