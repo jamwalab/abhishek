@@ -6,7 +6,7 @@ main {
 }
 :root {
   --primary: #8c54ff;
-  --secondary: #F3A847;
+  
   --tertiary: #B12704;
   --light: #fafafa;
   --dark: #000000;
@@ -16,6 +16,8 @@ main {
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
   --ajBackground: #d6d6d6;
+  --secondary: #5a5a5a;
+  --ajSecondaryLight: #999999;
 }
 
 * {
@@ -91,12 +93,10 @@ a {
   font-weight: bold;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 header {
   background: var(--ajBackground);
+  min-height: 100px;
+  align-items: center;
 }
 
 header a {
@@ -299,8 +299,41 @@ a {
 	
 }
 
+.webTitle::before {
+  border: solid 2px;
+}
+
+.webTitle:hover {
+  transform: scale(1.1);
+  transition: .5s all;
+}
+
 .navActive {
   color: var(--secondary);
+  /*border-bottom: solid 4px var(--secondary);*/
+}
+
+nav a:hover {
+  border-bottom: solid 4px var(--secondary);
+}
+
+.bottom-margin {
+  border-bottom: solid 2px var(--ajSecondaryLight);
+}
+
+.title-spaceSetter {
+  padding: 15px 0;
+  font-weight: 600;
+}
+
+.img-container {
+  padding: 5px 0;
+}
+
+.img-container h4 {
+  padding: 5px 0;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .no-flex-wrap {
@@ -328,7 +361,7 @@ a {
   object-position: top;
   opacity: 30%;
   max-height: 300px;
-  border: solid 2px rgb(175, 123, 123);
+  border: solid 2px var(--secondary);
 }
 
 .img-preview img:hover {
@@ -340,41 +373,15 @@ a {
   position: absolute;
   bottom: 30px;
   padding: 5px 10px 5px 20px;
-  background: rgb(175, 123, 123);
+  background: var(--secondary);
   color: white;
+  align-items: center;
 }
 
 .img-text p {
   font-size: 14px;
+  align-items: center;
 }
-
-/*
-.img-container {
-  position: relative;
-}
-
-.img-preview img {
-  transition: all 2s;
-  width: 100%;
-  object-fit: cover;
-  object-position: top;
-  opacity: 30%;
-  max-height: 300px;
-}    
-
-.img-text {
-  position: absolute;
-  bottom: 30px;
-  padding: 5px 10px 5px 20px;
-  background: rgb(175, 123, 123);
-  color: white;
-}
-
-.img-text h3 {
-  font-size: 22px;
-  padding: 0 0 4px 0;
-}
-*/
 
 @media screen and (max-width: 1650px) {
   body {

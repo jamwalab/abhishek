@@ -34,7 +34,7 @@ function Portfolio() {
   ]
   return(
     <div>
-      <h2>Portfolio</h2>
+      <h2 className="title-spaceSetter">Portfolio</h2>
       <Projects
         allProjects={allProjects}
       ></Projects>
