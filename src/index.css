@@ -15,9 +15,13 @@ main {
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-  --ajBackground: #dddddd;
+
+  --ajBackground: #d3d3d3;
   --secondary: #636363;
   --ajSecondaryLight: #999999;
+  --pText-color: #3d3e4e;
+  --pText-color-81t: #3d3e4ed0;
+  --pText-color-50t: #3d3e4e80;
 }
 
 * {
@@ -37,9 +41,10 @@ body {
   font-size: 18px;
   letter-spacing: .1em;
   background: var(--ajBackground);
-  color: var(--dark);
+  color: var(--pText-color);
   font-family: 'Roboto Slab', serif;
   max-width: 60%;
+  text-align: justify;
 }
 
 h1,
@@ -82,9 +87,9 @@ p {
   font-size: 1.1rem;
 }
 
-.text-justify {
+/*.text-justify {
   text-align: justify;
-}
+}*/
 
 a {
   color: var(--tertiary);
@@ -99,7 +104,7 @@ header {
 }
 
 header a {
-  color: var(--dark);
+  color: var(--pText-color);
 }
 
 button {
@@ -149,7 +154,7 @@ input:focus {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
 
-li {
+nav li {
   list-style: none;
 }
 
@@ -297,7 +302,7 @@ a {
 	margin-right: -2px;
 	
 }
-
+/*Website title*/
 .webTitle::before {
   border: solid 2px;
 }
@@ -307,6 +312,7 @@ a {
   transition: .5s all;
 }
 
+/*Navigation bar*/
 .navActive {
   color: var(--secondary);
   /*border-bottom: solid 4px var(--secondary);*/
@@ -329,31 +335,10 @@ nav a:hover {
   padding: 5px 0;
 }
 
-.img-container h4 {
+.bottomBorder-underline {
   display: inline-block;
-  padding: 5px;
   border-bottom: solid 2px var(--ajSecondaryLight);
-}
-
-.projectTitle {
-  display: flex;
-  align-content: center;
-  align-items: center;
-}
-
-.projectTitle p {
-  margin-left: 30px;
-}
-
-.projectTitle a {
-  margin: 5px;
-  color: var(--secondary);
-  font-size: 14px;
-}
-
-.projectTitle a:hover {
-  color: var(--dark);
-  transition: 1s all;
+  padding: 5px 0;
 }
 
 /*.projectTitle a {
@@ -382,6 +367,7 @@ nav a:hover {
   border-radius: 50%;
 }
 
+/* Portfolio page styling */
 .img-preview {
   display: flex;
   position: relative;
@@ -408,13 +394,45 @@ nav a:hover {
   bottom: 30px;
   padding: 5px 10px 5px 20px;
   background: var(--secondary);
-  color: white;
+  color: var(--ajBackground);
   align-items: center;
 }
 
-.img-text p {
+.img-container p {
   font-size: 14px;
   margin: 5px 0;
+}
+
+.projectTitle p {
+  margin-left: 30px;
+}
+
+.projectTitle {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.projectTitle a {
+  margin: 5px;
+  color: var(--secondary);
+  font-size: 14px;
+}
+
+.projectTitle a:hover {
+  color: var(--pText-color);
+  border-bottom: solid 2px var(--ajSecondaryLight);
+  transition: 1s all;
+}
+
+/*Resume styling*/
+.experience li, .skills p {
+  color: var(--pText-color-81t);
+  font-weight: 500;
+}
+
+.education div {
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 1650px) {

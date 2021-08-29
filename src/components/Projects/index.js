@@ -6,7 +6,7 @@ function Projects({allProjects}) {
       {allProjects.map((project) => (
         <article className="img-container" key={project.title}>
           <div className='projectTitle'>
-            <h4>{project.title}</h4>
+            <h4 className="bottomBorder-underline">{project.title}</h4>
             <p>
               <a href={project.link} target="_blank">
                 GitHub
