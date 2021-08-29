@@ -15,8 +15,8 @@ main {
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-  --ajBackground: #d6d6d6;
-  --secondary: #5a5a5a;
+  --ajBackground: #dddddd;
+  --secondary: #636363;
   --ajSecondaryLight: #999999;
 }
 
@@ -80,7 +80,6 @@ h6 {
 
 p {
   font-size: 1.1rem;
-  margin-top: 0;
 }
 
 .text-justify {
@@ -314,7 +313,7 @@ a {
 }
 
 nav a:hover {
-  border-bottom: solid 4px var(--secondary);
+  border-bottom: solid 3px var(--secondary);
 }
 
 .bottom-margin {
@@ -331,15 +330,49 @@ nav a:hover {
 }
 
 .img-container h4 {
-  padding: 5px 0;
-  text-decoration: underline;
-  text-underline-offset: 5px;
+  display: inline-block;
+  padding: 5px;
+  border-bottom: solid 2px var(--ajSecondaryLight);
 }
 
-.no-flex-wrap {
+.projectTitle {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.projectTitle p {
+  margin-left: 30px;
+}
+
+.projectTitle a {
+  margin: 5px;
+  color: var(--secondary);
+  font-size: 14px;
+}
+
+.projectTitle a:hover {
+  color: var(--dark);
+  transition: 1s all;
+}
+
+/*.projectTitle a {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 15px;
+}
+
+.projectTitle img {
+  max-height: 24px;
+}
+
+*/
+
+.intro-section {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  padding: 30px 0;
 }
 
 .aboutMeProfPic {
@@ -352,6 +385,7 @@ nav a:hover {
 .img-preview {
   display: flex;
   position: relative;
+  cursor: pointer;
 }
 
 .img-preview img {
@@ -380,7 +414,7 @@ nav a:hover {
 
 .img-text p {
   font-size: 14px;
-  align-items: center;
+  margin: 5px 0;
 }
 
 @media screen and (max-width: 1650px) {

@@ -5,9 +5,20 @@ function Projects({allProjects}) {
     <section>
       {allProjects.map((project) => (
         <article className="img-container" key={project.title}>
-          <h4>{project.title}</h4>
+          <div className='projectTitle'>
+            <h4>{project.title}</h4>
+            <p>
+              <a href={project.link} target="_blank">
+                GitHub
+              </a>|
+              <a href={project.link} target="_blank">
+                Website
+              </a>
+            </p>
+          </div>
+          
           <p>{project.description}</p>
-          <a className="img-preview">
+          <a className="img-preview" href={project.link} target="_blank">
             <img
               src={require(`../../assets/images/${project.image}.png`).default}
               alt={project.title}

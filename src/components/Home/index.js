@@ -4,7 +4,7 @@ import profPic from '../../assets/images/prof-pic.jpg'
 const Home = function() {
   return(
     <section>
-      <article className="flex-row space-between no-flex-wrap">
+      <article className="flex-row space-between intro-section">
         <div className="px-2">
           <img src={profPic} className='aboutMeProfPic' alt='Profile'></img>
         </div>
