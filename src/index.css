@@ -108,12 +108,12 @@ header a {
 }
 
 button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 button[disabled] {
   cursor: default;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 img {
@@ -331,14 +331,14 @@ nav a:hover {
   width: 100%;
   object-fit: cover;
   object-position: top;
-  opacity: 30%;
+  opacity: 0.4;
   max-height: 300px;
   border: solid 2px var(--pText-color);
 }
 
 .img-preview img:hover {
   transition: all .5s;
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .img-text {
@@ -416,7 +416,7 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 0 10px;
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .contactLinks img:hover { 
