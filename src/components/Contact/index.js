@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
@@ -35,6 +35,7 @@ function Contact() {
     event.preventDefault();
     if (!message) {
       console.log(formState);
+      event.target.reset();
     } else {
       console.log('message', message);
     }

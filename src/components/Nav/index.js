@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Nav = function(props) {
 
@@ -6,6 +6,10 @@ const Nav = function(props) {
     pageSelected,
     setPageSelected
   } = props;
+
+  useEffect(() => {
+    document.title = `Abhishek- ${pageSelected}`;
+  });
 
   return(
     <header className="flex-row space-between px-2 bottom-margin">
