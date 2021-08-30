@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Resume section with download to full pdf
 function Resume() {
   return(
     <section>

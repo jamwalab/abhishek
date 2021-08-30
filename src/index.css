@@ -390,6 +390,11 @@ nav a:hover {
   /*transition: 1s all;*/
 }
 
+/* Contact styling */
+.error-text {
+  color: var(--error);
+}
+
 /*Resume styling*/
 .experience li, .skills p {
   color: var(--pText-color-81t);
@@ -453,10 +458,57 @@ footer {
   body {
     max-width: 90%;
   }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1.25rem;
+  }
+  
+  h5 {
+    font-size: 1rem;
+  }
+  
+  h6 {
+    font-size: 0.75rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
   body {
     max-width: 95%;
+  }
+
+  header, .intro-section {
+    flex-direction: column;
+  }
+
+  .intro-section h2 {
+    padding: 0;
+  }
+
+  nav ul {
+    justify-content: space-between;
+  }
+
+  main {
+    padding: 120px 15px;
+  }
+
+  input, textarea, form {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  main {
+    padding: 120px 0;
   }
 }

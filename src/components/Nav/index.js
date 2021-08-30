@@ -2,15 +2,18 @@ import React, { useEffect } from 'react';
 
 const Nav = function(props) {
 
+  //Props to track current page selected and function to set new page
   const {
     pageSelected,
     setPageSelected
   } = props;
 
+  //useEffect to change page title based on page selected.
   useEffect(() => {
     document.title = `Abhishek- ${pageSelected}`;
   });
 
+  //return header html with navbar
   return(
     <header className="flex-row space-between px-2 bottom-margin">
       <h1 className="webTitle">

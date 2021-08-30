@@ -2,6 +2,7 @@ import React from 'react';
 import Projects from '../Projects'
 
 function Portfolio() {
+  //List of projects to be displayed
   const allProjects = [
     {
       title: "Smart Fix",
@@ -36,6 +37,7 @@ function Portfolio() {
       description: "•	Allows users to register, create blog posts and add comments on blogs posted by other users."
     }
   ]
+  //Portfolio page html structure
   return(
     <div>
       <h2 className="title-spaceSetter">Portfolio</h2>

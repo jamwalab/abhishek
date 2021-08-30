@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Projects({allProjects}) {
+  //Map the project array and generate project blocks
   return(
     <section>
       {allProjects.map((project) => (

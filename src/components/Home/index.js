@@ -1,6 +1,7 @@
 import React from 'react';
 import profPic from '../../assets/images/prof-pic.jpg'
 
+//Home Page HTML with About Me section
 const Home = function() {
   return(
     <section>

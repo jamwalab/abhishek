@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Footer HTML
 function Footer() {
   return(
     <footer>
@@ -15,7 +16,7 @@ function Footer() {
           </a>
         </div>
         <div>
-          <a href="www.linkedin.com/in/abhishekj-21" target="_blank" rel="noreferrer">
+          <a href="https://linkedin.com/in/abhishekj-21" target="_blank" rel="noreferrer">
             <img src={require(`../../assets/icons/linkedin.svg`).default} alt="linkedin icon" />
           </a>
         </div>
