@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/abhishek/static/css/main.2a7bb4b4.chunk.css",
+    "main.css": "/abhishek/static/css/main.308bb944.chunk.css",
     "main.js": "/abhishek/static/js/main.5e7becaa.chunk.js",
     "main.js.map": "/abhishek/static/js/main.5e7becaa.chunk.js.map",
     "runtime-main.js": "/abhishek/static/js/runtime-main.3c55b186.js",
@@ -10,7 +10,7 @@
     "static/js/3.5b25d96d.chunk.js": "/abhishek/static/js/3.5b25d96d.chunk.js",
     "static/js/3.5b25d96d.chunk.js.map": "/abhishek/static/js/3.5b25d96d.chunk.js.map",
     "index.html": "/abhishek/index.html",
-    "static/css/main.2a7bb4b4.chunk.css.map": "/abhishek/static/css/main.2a7bb4b4.chunk.css.map",
+    "static/css/main.308bb944.chunk.css.map": "/abhishek/static/css/main.308bb944.chunk.css.map",
     "static/js/2.20b8021d.chunk.js.LICENSE.txt": "/abhishek/static/js/2.20b8021d.chunk.js.LICENSE.txt",
     "static/media/AbhishekResume.pdf": "/abhishek/static/media/AbhishekResume.a2305fcb.pdf",
     "static/media/CalTracker.png": "/abhishek/static/media/CalTracker.abb5b579.png",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.3c55b186.js",
     "static/js/2.20b8021d.chunk.js",
-    "static/css/main.2a7bb4b4.chunk.css",
+    "static/css/main.308bb944.chunk.css",
     "static/js/main.5e7becaa.chunk.js"
   ]
 }
