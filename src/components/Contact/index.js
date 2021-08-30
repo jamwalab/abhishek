@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-  const [errorMessage, setErrorMessage] = useState('');
+  const [message, setMessage] = useState('');
 
   function handleChange(event) {
     if (event.target.name === 'email') {
@@ -11,21 +11,21 @@ function Contact() {
       console.log(isValid);
       // isValid conditional statement
       if(!isValid) {
-        setErrorMessage('Your email is invalid.');
+        setMessage('Your email is invalid.');
       } else {
-        setErrorMessage('');
+        setMessage('');
       }
     } else {
       if (!event.target.value.length) {
-        setErrorMessage(`${event.target.name} is required.`);
+        setMessage(`${event.target.name} is required.`);
       } else {
-        setErrorMessage('');
+        setMessage('');
       }
     }
 
-    console.log('errorMessage', errorMessage);
+    console.log('message', message);
 
-    if (!errorMessage) {
+    if (!message) {
       setFormState({ ...formState, [event.target.name]: event.target.value });
     }
   };
@@ -33,10 +33,10 @@ function Contact() {
 
   async function handleSubmit (event) {
     event.preventDefault();
-    if (!errorMessage) {
+    if (!message) {
       console.log(formState);
     } else {
-      console.log('errorMessage', errorMessage);
+      console.log('message', message);
     }
   };
 
@@ -46,19 +46,19 @@ function Contact() {
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
-          <input type="text" name="name" onBlur={handleChange}/>
+          <input type="text" name="name" onChange={handleChange} onBlur={handleChange}/>
         </div>
         <div>
           <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" onBlur={handleChange}/>
+          <input type="email" name="email" onChange={handleChange} onBlur={handleChange}/>
         </div>
         <div>
           <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" onBlur={handleChange}/>
+          <textarea name="message" rows="5" onChange={handleChange} onBlur={handleChange}/>
         </div>
-        {errorMessage && (
+        {message && (
           <div>
-            <p className="error-text">{errorMessage}</p>
+            <p className="error-text">{message}</p>
           </div>
         )}
         <button type="submit" >Submit</button>

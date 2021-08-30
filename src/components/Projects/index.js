@@ -8,17 +8,17 @@ function Projects({allProjects}) {
           <div className='projectTitle'>
             <h4 className="bottomBorder-underline">{project.title}</h4>
             <p>
-              <a href={project.github} target="_blank">
+              <a href={project.github} target="_blank" rel="noreferrer">
                 GitHub
               </a>|
-              <a href={project.link} target="_blank">
+              <a href={project.link} target="_blank" rel="noreferrer">
                 Website
               </a>
             </p>
           </div>
           
           <p>{project.description}</p>
-          <a className="img-preview" href={project.link} target="_blank">
+          <a className="img-preview" href={project.link} target="_blank" rel="noreferrer">
             <img
               src={require(`../../assets/images/${project.image}`).default}
               alt={project.title}

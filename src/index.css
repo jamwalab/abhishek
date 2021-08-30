@@ -3,6 +3,7 @@
 main {
 	margin: 0 auto;
   padding: 30px 30px;
+  padding-bottom: 120px;
 }
 :root {
   --primary: #8c54ff;
@@ -45,6 +46,8 @@ body {
   font-family: 'Roboto Slab', serif;
   max-width: 60%;
   text-align: justify;
+  position: relative;
+  min-height: 100vh;
 }
 
 h1,
@@ -87,9 +90,6 @@ p {
   font-size: 1.1rem;
 }
 
-/*.text-justify {
-  text-align: justify;
-}*/
 
 a {
   color: var(--tertiary);
@@ -106,18 +106,6 @@ header {
 header a {
   color: var(--pText-color);
 }
-
-/*button {
-  font-size: 1rem;
-  text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: .5rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--pText-color);
-}*/
 
 button:hover {
   opacity: .8;
@@ -168,30 +156,18 @@ input:focus, textarea:focus {
   text-align: left;
 }
 
-nav li {
-  list-style: none;
-}
-
-nav a:hover {
-  text-decoration: none;
-}
-
-nav  li {
-  cursor: pointer;
-}
-
 .container {
   width: 85%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
-/**/
+
 .flex-row {
   display: flex;
   flex-wrap: wrap;
 }
-/**/
+
 .space-between {
   justify-content: space-between;
 }
@@ -250,42 +226,11 @@ nav  li {
   padding-bottom: var(--spacing-two);
 }
 
-.card {
-  width: 25%;
-  text-align: center;
-}
-
 .img-thumbnail {
   width: auto;
   height: 300px;
   margin-bottom: 50px;
   cursor: pointer;
-}
-
-.modalBackdrop {
-	background: rgba(0, 0, 0, .65);
-	bottom: 0;
-	left: 0;
-	overflow: auto;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 1;
-}
-
-.modalContainer {
-	background: var(--darker);
-	border-radius: 5px;
-	max-width: 100%;
-	margin: 50px auto;
-	padding: 15px;
-	width: 960px;
-}
-
-.modalTitle {
-	font-size: 18px;
-	font-weight: 600;
-	margin-bottom: 25px;
 }
 
 button {
@@ -325,12 +270,17 @@ a {
 
 /*Navigation bar*/
 .navActive {
-  color: var(--secondary);
-  /*border-bottom: solid 4px var(--secondary);*/
+  color: var(--pText-color-50t);
+}
+
+nav li {
+  list-style: none;
+  cursor: pointer;
 }
 
 nav a:hover {
-  border-bottom: solid 3px var(--secondary);
+  text-decoration: none;
+  border-bottom: solid 3px var(--pText-color-81t);
 }
 
 .bottom-margin {
@@ -446,6 +396,32 @@ nav a:hover {
   color: var(--pText-color-81t);
   border-bottom: solid 2px var(--ajSecondaryLight);
   /*transition: 1s all;*/
+}
+
+/*Footer styling*/
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 100px;
+}
+
+.contactLinks {
+  align-items: center;
+  justify-content: center;
+}
+
+.contactLinks img { 
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  opacity: 80%;
+}
+
+.contactLinks img:hover { 
+  transform: scale(1.1);
+  transition: all .5s;
 }
 
 @media screen and (max-width: 1650px) {

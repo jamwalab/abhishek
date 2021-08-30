@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 
 function App() {
   const [menuElements] = useState([
@@ -27,6 +28,7 @@ function App() {
         : <Resume></Resume>
       }
       </main>
+      <Footer></Footer>
     </div>
   );
 }
