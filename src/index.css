@@ -107,7 +107,7 @@ header a {
   color: var(--pText-color);
 }
 
-button {
+/*button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
@@ -116,8 +116,8 @@ button {
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
-}
+  background-color: var(--pText-color);
+}*/
 
 button:hover {
   opacity: .8;
@@ -143,15 +143,29 @@ form {
 input {
   font-size: 1rem;
   padding: 0.25rem;
-  border: 1px solid var(--dark);
+  border: 1px solid var(--pText-color-50t);
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
+  width: 600px;
 }
 
-input:focus {
-  border: 1px solid var(--secondary);
+textarea {
+	width: 600px;
+	height: 120px;
+	border: 1px solid var(--pText-color-50t);;
+	padding: 5px;
+  outline: none;
+  border-radius: 3px;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid var(--pText-color-81t);
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+}
+
+#contact-form {
+  text-align: left;
 }
 
 nav li {
@@ -164,13 +178,6 @@ nav a:hover {
 
 nav  li {
   cursor: pointer;
-}
-
-textarea {
-	width: 600px;
-	height: 120px;
-	border: 3px solid #cccccc;
-	padding: 5px;
 }
 
 .container {
@@ -282,7 +289,7 @@ textarea {
 }
 
 button {
-	background: var(--primary);
+	background: var(--pText-color);
 	border: 0;
 	border-radius: 5px;
 	color: #fff;
@@ -303,12 +310,16 @@ a {
 	
 }
 /*Website title*/
-.webTitle::before {
-  border: solid 2px;
+.webTitle {
+  align-items: center;
+}
+
+.webTitle a {
+  border: solid 2px var( --pText-color);
 }
 
 .webTitle:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: .3s all;
 }
 
@@ -326,13 +337,11 @@ nav a:hover {
   border-bottom: solid 2px var(--ajSecondaryLight);
 }
 
+/*Page titles general settings*/
+
 .title-spaceSetter {
   padding: 15px 0;
   font-weight: 600;
-}
-
-.img-container {
-  padding: 5px 0;
 }
 
 .bottomBorder-underline {
@@ -341,18 +350,7 @@ nav a:hover {
   padding: 5px 0;
 }
 
-/*.projectTitle a {
-  display: inline-block;
-  cursor: pointer;
-  margin: 0 15px;
-}
-
-.projectTitle img {
-  max-height: 24px;
-}
-
-*/
-
+/*Home page styling*/
 .intro-section {
   flex-wrap: nowrap;
   justify-content: center;
@@ -368,6 +366,10 @@ nav a:hover {
 }
 
 /* Portfolio page styling */
+.img-container {
+  padding: 5px 0;
+}
+
 .img-preview {
   display: flex;
   position: relative;
@@ -433,6 +435,17 @@ nav a:hover {
 
 .education div {
   padding: 10px 0;
+}
+
+.downloadResume {
+  font-style: none;
+  color: var(--pText-color);
+}
+
+.downloadResume:hover {
+  color: var(--pText-color-81t);
+  border-bottom: solid 2px var(--ajSecondaryLight);
+  /*transition: 1s all;*/
 }
 
 @media screen and (max-width: 1650px) {

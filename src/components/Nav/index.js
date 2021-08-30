@@ -10,7 +10,7 @@ const Nav = function(props) {
   return(
     <header className="flex-row space-between px-2 bottom-margin">
       <h1 className="webTitle">
-        <a href='/' className='px-2'>AJ</a>
+        <a href='/' className='px-1 py-1'>AJ</a>  
       </h1>
       
       <nav>

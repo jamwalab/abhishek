@@ -4,7 +4,7 @@ function Resume() {
   return(
     <section>
       <article  className="title-spaceSetter">
-        <h4><a href="" className="downloadResume">Click to download the full resume.</a></h4>
+        <h4><a href={require(`../../assets/files/AbhishekResume.pdf`).default} className="downloadResume" download>Click to download the full resume.</a></h4>
       </article>
       <article className="skills">
         <h4 className="title-spaceSetter bottomBorder-underline">Technical Skills</h4>
