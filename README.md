@@ -16,7 +16,7 @@
 
 [Link to the portfolio page](https://jamwalab.github.io/abhishek/)
 
-![Homepage](./src/assets/images/homepage.png)
+![Homepage](./src/assets/images/homepage.gif)
 
 ## Feature
 * Built using React.
