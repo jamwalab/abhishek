@@ -257,14 +257,27 @@ a {
 /*Website title*/
 .webTitle {
   align-items: center;
+  display: grid;
 }
 
 .webTitle a {
-  border: solid 2px var( --pText-color);
+  z-index: 99;
+  grid-row: 1;
+  grid-column: 1;
+  margin: 3px;
 }
 
-.webTitle:hover {
-  transform: scale(1.05);
+.webTitle p {
+  border: solid 2px var( --pText-color);
+  margin: 0;
+  height: 72px;
+  width: 72px;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.webTitle:hover p {
+  transform: rotateZ(90deg);
   transition: .3s all;
 }
 

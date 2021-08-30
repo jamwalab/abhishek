@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Abhishek - Portfolio
+## Version 1.0
+## Description
+>Portfolio page - Abhishek Jamwal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+* [License](#license)
+* [Link](#link)
+* [Usage](#usage)
+* [Feature](#feature)
+* [Credits](#credits)
 
-## Available Scripts
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-In the project directory, you can run:
+## Link
 
-### `npm start`
+[Link to the portfolio page](https://jamwalab.github.io/abhishek/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Homepage](./src/assets/images/homepage.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Usage
+* The homepage shows the title of all existing blog posts and a preview of the post content.
+* It also displays the name of the user who created the post, date on which it was created and number of comments.
 
-### `npm test`
+![Homepage](./assets/images/homepage.PNG)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* To add comments or get access to the dashboard and create new posts, users are required to login.
+* To login, click on the login button and enter your _username_ and _password_.
+* If you don't have an account, click signup and enter username, password and email address.
 
-### `npm run build`
+![Login](./assets/images/login.PNG)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Once logged in, user can access dash board to create new posts and edit or delete existing ones.
+* User also has the option to add comments on blog posts.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Feature
+* Blog post preview on homepage
+* Line breaks are preserved when adding new posts, editing and displaying.
+* Cookie max age 5 mins. User required to login again once it expires.
+* Dashboard and comments feature only available to users logged in
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Credits
+#### NPM Modules
+* [bcrypt](https://www.npmjs.com/package/bcrypt)
+* [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize)
+* [dotenv](https://www.npmjs.com/package/dotenv)
+* [express](https://www.npmjs.com/package/express)
+* [express-handlebars](https://www.npmjs.com/package/express-handlebars)
+* [express-session](https://www.npmjs.com/package/express-session)
+* [mysql2](https://www.npmjs.com/package/mysql2)
+* [sequelize](https://www.npmjs.com/package/sequelize)
+* [jest](https://jestjs.io/)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Users
+* Abhishek Jamwal - [GitHub](https://github.com/jamwalab)
