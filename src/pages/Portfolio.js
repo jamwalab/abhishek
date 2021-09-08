@@ -18,15 +18,15 @@ function Portfolio() {
       github: "https://github.com/jamwalab/checkEta",
       tech: "Node, Express, Handlebars, API, Axios, HTML, CSS",
       image: "etaTracker.png",
-      description: "•	Helps provide estimated time of arrival for shipments arriving at port and moving on rail in bulk."
+      description: "•	Helps provide an estimated time of arrival for shipments arriving at the port and moving on the rail in bulk."
     },
     {
       title: "Calorie Tracker",
       link: "https://uot-project-grp.github.io/project01-calorie-tracker/",
-      github: "https://github.com/groupsixzerotwo/smart-fix",
+      github: "https://github.com/uot-project-grp/project01-calorie-tracker",
       tech: "HTML / CSS / JS / JQuery",
       image: "CalTracker.png",
-      description: "•	Allows users to set calorie targets, track daily calorie consumption and track consumption with tables and graphs."
+      description: "•	Allows users to set calorie targets, track daily calorie consumption, and track consumption with tables and graphs."
     },
     {
       title: "The Tech Blog",
@@ -35,6 +35,14 @@ function Portfolio() {
       tech: "Node, Express, Handlebars, API, MySQL, HTML, CSS",
       image: "theTechBlog.png",
       description: "•	Allows users to register, create blog posts and add comments on blogs posted by other users."
+    },
+    {
+      title: "Budget Tracker",
+      link: "https://limitless-caverns-12620.herokuapp.com/",
+      github: "https://github.com/jamwalab/budgetTracker",
+      tech: "Node, Express, Mongoose, PWA, HTML, CSS",
+      image: "budgetTracker.png",
+      description: "•	A progressive web application that works offline, can be installed, and help the user track their budget."
     }
   ]
   //Portfolio page html structure
