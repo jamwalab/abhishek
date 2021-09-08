@@ -3,7 +3,6 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Nav from './components/Nav';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 import Home from './pages/Home';
