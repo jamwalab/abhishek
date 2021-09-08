@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
@@ -10,24 +10,17 @@ import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
 function App() {
-  const [menuElements] = useState([
-    "Home", "Portfolio", "Contact", "Resume"
-  ]);
-
-  const [pageSelected, setPageSelected] = useState(menuElements[0]);
-
   return (
     <Router>
       <div>
-        <Nav
-          pageSelected={pageSelected}
-          setPageSelected={setPageSelected}
-        ></Nav>
+        <Nav></Nav>
         <main>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/portfolio" component={Portfolio} />
-            <Route exact path="/resume" component={Resume} />
+            <Route exact path="/abhishek" component={Home} />
+            <Route exact path="/abhishek/portfolio" component={Portfolio} />
+            <Route exact path="/abhishek/resume" component={Resume} />
+
+            <Redirect to="/abhishek" />
           </Switch>
         </main>
         <Footer></Footer>
