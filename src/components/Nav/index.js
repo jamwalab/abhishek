@@ -1,40 +1,20 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
-const Nav = function(props) {
-
-  //Props to track current page selected and function to set new page
-  const {
-    pageSelected,
-    setPageSelected
-  } = props;
-
-  //useEffect to change page title based on page selected.
-  useEffect(() => {
-    document.title = `Abhishek- ${pageSelected}`;
-  });
-
+const Nav = function() {
   //return header html with navbar
   return(
     <header className="flex-row space-between px-2 bottom-margin">
-      <h1 className="webTitle">
-        <a href='/abhishek' className='px-1 py-1'>AJ</a>
-        <p></p>
-      </h1>
+      <Link to="/" className="webTitle">
+        <p className='px-1 py-1 textLogo'>AJ</p>
+        <p className="titleSquare"></p>
+      </Link>
       
       <nav>
         <ul className="flex-row">
-          <li>
-            <a href='#home' className={`mx-2 ${pageSelected === `Home` && `navActive`}`} onClick={() => setPageSelected("Home")}>Home</a>
-          </li>
-          <li>
-            <a href='#portfolio' className={`mx-2 ${pageSelected === `Portfolio` && `navActive`}`} onClick={() => setPageSelected("Portfolio")}>Portfolio</a>
-          </li>
-          <li>
-            <a href='#contact' className={`mx-2 ${pageSelected === `Contact` && `navActive`}`} onClick={() => setPageSelected("Contact")}>Contact</a>
-          </li>
-          <li>
-            <a href='#resume' className={`mx-2 ${pageSelected === `Resume` && `navActive`}`} onClick={() => setPageSelected("Resume")}>Resume</a>
-          </li>
+          <li><NavLink exact to="/" className={`mx-2`} activeClassName="navActive">Home</NavLink></li>
+          <li><NavLink to="/portfolio" className={`mx-2`} activeClassName="navActive">Portfolio</NavLink></li>
+          <li><NavLink to="/resume" className={`mx-2`} activeClassName="navActive">Resume</NavLink></li>
         </ul>
       </nav>
     </header>

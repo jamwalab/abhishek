@@ -2,8 +2,7 @@
 
 main {
 	margin: 0 auto;
-  padding: 30px 30px;
-  padding-bottom: 120px;
+  padding: 30px 30px 120px 30px;
 }
 :root {
   --primary: #8c54ff;
@@ -260,14 +259,16 @@ a {
   display: grid;
 }
 
-.webTitle a {
+.textLogo {
   z-index: 99;
   grid-row: 1;
   grid-column: 1;
   margin: 3px;
+  font-size: 36px;
+  font-weight: 900;
 }
 
-.webTitle p {
+.titleSquare {
   border: solid 2px var( --pText-color);
   margin: 0;
   height: 72px;
@@ -276,9 +277,10 @@ a {
   grid-column: 1;
 }
 
-.webTitle:hover p {
+.webTitle:hover .titleSquare {
   transform: rotateZ(90deg);
   transition: .3s all;
+  cursor: pointer;
 }
 
 /*Navigation bar*/
@@ -374,6 +376,7 @@ nav a:hover {
 
 .projectTitle {
   display: flex;
+  flex-wrap: wrap;
   align-content: center;
   align-items: center;
 }
@@ -478,6 +481,10 @@ footer {
   h6 {
     font-size: 0.75rem;
   }
+
+  main {
+    padding: 20px 15px 120px 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -498,17 +505,25 @@ footer {
   }
 
   main {
-    padding: 120px 15px;
+    padding: 0 15px 120px 15px;
   }
 
   input, textarea, form {
     width: 100%;
     margin: 0;
   }
+
+  .projectDesc {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 575px) {
   main {
-    padding: 120px 0;
+    padding: 0 15px 120px 15px;
+  }
+
+  .projectTitle p {
+    margin-left: 10px;
   }
 }

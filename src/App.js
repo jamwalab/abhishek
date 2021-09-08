@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import './App.css';
-import Home from './components/Home';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import Nav from './components/Nav';
 import Contact from './components/Contact';
-import Resume from './components/Resume';
-import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
+
+import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
 
 function App() {
   const [menuElements] = useState([
@@ -15,21 +18,23 @@ function App() {
   const [pageSelected, setPageSelected] = useState(menuElements[0]);
 
   return (
-    <div>
-      <Nav
-        pageSelected={pageSelected}
-        setPageSelected={setPageSelected}
-      ></Nav>
-      <main>
-      {
-      pageSelected === menuElements[0] ? <Home></Home>
-        : pageSelected === menuElements[1] ? <Portfolio></Portfolio>
-        : pageSelected === menuElements[2] ? <Contact></Contact>
-        : <Resume></Resume>
-      }
-      </main>
-      <Footer></Footer>
-    </div>
+    <Router>
+      <div>
+        <Nav
+          pageSelected={pageSelected}
+          setPageSelected={setPageSelected}
+        ></Nav>
+        <main>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/resume" component={Resume} />
+          </Switch>
+        </main>
+        <Footer></Footer>
+      </div>
+    </Router>
+    
   );
 }
 

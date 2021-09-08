@@ -18,7 +18,7 @@ function Projects({allProjects}) {
             </p>
           </div>
           
-          <p>{project.description}</p>
+          <p className="projectDesc">{project.description}</p>
           <a className="img-preview" href={project.link} target="_blank" rel="noreferrer">
             <img
               src={require(`../../assets/images/${project.image}`).default}
