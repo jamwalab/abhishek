@@ -49,7 +49,7 @@ function Portfolio() {
       link: "https://tragically-donair-32034.herokuapp.com/",
       github: "https://github.com/jamwalab/NoteTaker",
       tech: "Node, Express, Javascript, HTML, CSS",
-      image: "budgetTracker.png",
+      image: "noteTaker.png",
       description: "•	A progressive web application that works offline, can be installed, and help the user track their budget."
     }
   ]
