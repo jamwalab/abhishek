@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/abhishek/static/css/main.7a2d24e5.chunk.css",
-    "main.js": "/abhishek/static/js/main.8f95121a.chunk.js",
-    "main.js.map": "/abhishek/static/js/main.8f95121a.chunk.js.map",
-    "runtime-main.js": "/abhishek/static/js/runtime-main.d55853e5.js",
-    "runtime-main.js.map": "/abhishek/static/js/runtime-main.d55853e5.js.map",
+    "main.css": "/abhishek/static/css/main.e86ba5cc.chunk.css",
+    "main.js": "/abhishek/static/js/main.9a9c44ae.chunk.js",
+    "main.js.map": "/abhishek/static/js/main.9a9c44ae.chunk.js.map",
+    "runtime-main.js": "/abhishek/static/js/runtime-main.48c2da5b.js",
+    "runtime-main.js.map": "/abhishek/static/js/runtime-main.48c2da5b.js.map",
     "static/js/2.7c4c1222.chunk.js": "/abhishek/static/js/2.7c4c1222.chunk.js",
     "static/js/2.7c4c1222.chunk.js.map": "/abhishek/static/js/2.7c4c1222.chunk.js.map",
-    "static/js/3.675245fe.chunk.js": "/abhishek/static/js/3.675245fe.chunk.js",
-    "static/js/3.675245fe.chunk.js.map": "/abhishek/static/js/3.675245fe.chunk.js.map",
+    "static/js/3.3d0e03c8.chunk.js": "/abhishek/static/js/3.3d0e03c8.chunk.js",
+    "static/js/3.3d0e03c8.chunk.js.map": "/abhishek/static/js/3.3d0e03c8.chunk.js.map",
     "index.html": "/abhishek/index.html",
-    "static/css/main.7a2d24e5.chunk.css.map": "/abhishek/static/css/main.7a2d24e5.chunk.css.map",
+    "static/css/main.e86ba5cc.chunk.css.map": "/abhishek/static/css/main.e86ba5cc.chunk.css.map",
     "static/js/2.7c4c1222.chunk.js.LICENSE.txt": "/abhishek/static/js/2.7c4c1222.chunk.js.LICENSE.txt",
-    "static/media/AbhishekResume.pdf": "/abhishek/static/media/AbhishekResume.97e09012.pdf",
+    "static/media/AbhishekResume.pdf": "/abhishek/static/media/AbhishekResume.ebff2475.pdf",
     "static/media/CalTracker.png": "/abhishek/static/media/CalTracker.abb5b579.png",
     "static/media/budgetTracker.png": "/abhishek/static/media/budgetTracker.a937905a.png",
     "static/media/etaTracker.png": "/abhishek/static/media/etaTracker.75030280.png",
@@ -20,14 +20,16 @@
     "static/media/homepage.gif": "/abhishek/static/media/homepage.31dc7615.gif",
     "static/media/linkedin.svg": "/abhishek/static/media/linkedin.189a288e.svg",
     "static/media/mail.svg": "/abhishek/static/media/mail.2cee92a7.svg",
+    "static/media/noteTaker.png": "/abhishek/static/media/noteTaker.54d7bdad.png",
     "static/media/prof-pic.jpg": "/abhishek/static/media/prof-pic.b5b74c23.jpg",
     "static/media/smartFix.png": "/abhishek/static/media/smartFix.2bf874d5.png",
-    "static/media/theTechBlog.png": "/abhishek/static/media/theTechBlog.ba50819c.png"
+    "static/media/theTechBlog.png": "/abhishek/static/media/theTechBlog.ba50819c.png",
+    "static/media/www.png": "/abhishek/static/media/www.cfed6447.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d55853e5.js",
+    "static/js/runtime-main.48c2da5b.js",
     "static/js/2.7c4c1222.chunk.js",
-    "static/css/main.7a2d24e5.chunk.css",
-    "static/js/main.8f95121a.chunk.js"
+    "static/css/main.e86ba5cc.chunk.css",
+    "static/js/main.9a9c44ae.chunk.js"
   ]
 }
