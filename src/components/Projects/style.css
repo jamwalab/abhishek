@@ -1,0 +1,85 @@
+/* Portfolio page styling */
+
+.img-container {
+  padding: 10px;
+  flex: 1 50%;
+  display: grid;
+}
+
+.img-container:hover .img-description {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.projectPrev, .img-description {
+  border: solid 2px var(--pText-color);
+  border-radius: 20px;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.projectPrev {
+  transition: all .5s;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  min-height: 250px;
+  max-height: 250px;
+  opacity: 0.6;
+}
+
+.img-description {
+  display: flex;
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 98;
+  opacity: 0;
+  justify-content: center;
+}
+
+.img-text {
+  position: absolute;
+  top: 30px;
+  padding: 5px 10px 5px 20px;
+  color: var(--ajBackground);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.projectLink {
+  margin: 10px 0;
+}
+
+.projectLink a {
+  margin: 0 20px;
+}
+
+.projectLink a img{
+  max-width: 50px;
+}
+
+.projectLink a img:hover {
+  cursor: pointer;
+  transition: .5s;
+  transform: scale(1.1);
+  opacity: .9;
+}
+
+.img-text p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 980px) {
+  .img-container {
+    flex: 1 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {  
+  .projectTitle p {
+    margin-left: 10px;
+  }
+}

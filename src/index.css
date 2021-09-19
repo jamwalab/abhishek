@@ -305,7 +305,7 @@ nav a:hover {
 /*Page titles general settings*/
 
 .title-spaceSetter {
-  padding: 15px 0;
+  padding: 5px 0;
   font-weight: 600;
 }
 
@@ -330,68 +330,7 @@ nav a:hover {
   border-radius: 50%;
 }
 
-/* Portfolio page styling */
-.img-container {
-  padding: 5px 0;
-}
 
-.img-preview {
-  display: flex;
-  position: relative;
-  cursor: pointer;
-}
-
-.img-preview img {
-  transition: all .5s;
-  width: 100%;
-  object-fit: cover;
-  object-position: top;
-  opacity: 0.4;
-  max-height: 300px;
-  border: solid 2px var(--pText-color);
-}
-
-.img-preview img:hover {
-  transition: all .5s;
-  opacity: 0.8;
-}
-
-.img-text {
-  position: absolute;
-  bottom: 30px;
-  padding: 5px 10px 5px 20px;
-  background: var(--secondary);
-  color: var(--ajBackground);
-  align-items: center;
-}
-
-.img-container p {
-  font-size: 14px;
-  margin: 5px 0;
-}
-
-.projectTitle p {
-  margin-left: 30px;
-}
-
-.projectTitle {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-}
-
-.projectTitle a {
-  margin: 5px;
-  color: var(--secondary);
-  font-size: 14px;
-}
-
-.projectTitle a:hover {
-  color: var(--pText-color);
-  border-bottom: solid 2px var(--ajSecondaryLight);
-  /*transition: 1s all;*/
-}
 
 /* Contact styling */
 .error-text {
@@ -512,10 +451,6 @@ footer {
     width: 100%;
     margin: 0;
   }
-
-  .projectDesc {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 575px) {
@@ -523,7 +458,4 @@ footer {
     padding: 0 15px 120px 15px;
   }
 
-  .projectTitle p {
-    margin-left: 10px;
-  }
 }

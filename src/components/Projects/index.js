@@ -1,33 +1,32 @@
 import React from 'react';
+import './style.css';
 
 function Projects({allProjects}) {
   //Map the project array and generate project blocks
   return(
-    <section>
+    <section className="flex-row">
       {allProjects.map((project) => (
         <article className="img-container" key={project.title}>
-          <div className='projectTitle'>
-            <h4 className="bottomBorder-underline">{project.title}</h4>
-            <p>
-              <a href={project.github} target="_blank" rel="noreferrer">
-                GitHub
-              </a>|
-              <a href={project.link} target="_blank" rel="noreferrer">
-                Website
-              </a>
-            </p>
-          </div>
-          
-          <p className="projectDesc">{project.description}</p>
-          <a className="img-preview" href={project.link} target="_blank" rel="noreferrer">
-            <img
+          <img
               src={require(`../../assets/images/${project.image}`).default}
               alt={project.title}
-            ></img>
+              className="projectPrev"
+          ></img>
+        
+          <div className="img-description">
             <div className="img-text">
+              <h4>{project.title}</h4>        
               <p>{project.tech}</p>
+              <div className="projectLink">
+                <a href={project.github} target="_blank" rel="noreferrer">
+                  <img src={require(`../../assets/icons/GitHu64px.png`).default} alt="github icon" />
+                </a>
+                <a href={project.link} target="_blank" rel="noreferrer">
+                  <img src={require(`../../assets/icons/www.png`).default} alt="github icon" />
+                </a>
+              </div>
             </div>
-          </a> 
+          </div> 
         </article>
       ))}
     </section>

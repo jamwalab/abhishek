@@ -8,7 +8,7 @@ function Portfolio() {
       title: "Smart Fix",
       link: "https://floating-cove-91289.herokuapp.com/",
       github: "https://github.com/groupsixzerotwo/smart-fix",
-      tech: "Node, Express, Handlebars, API, MySQL, HTML, CSS",
+      tech: "Node, Express, Handlebars, MySQL, Javascript, HTML, CSS",
       image: "smartFix.png",
       description: "•	A website that helps customers connect with service providers for household repairs and maintenance."
     },
@@ -16,7 +16,7 @@ function Portfolio() {
       title: "ETA Tracker",
       link: "https://hidden-cliffs-50551.herokuapp.com/",
       github: "https://github.com/jamwalab/checkEta",
-      tech: "Node, Express, Handlebars, API, Axios, HTML, CSS",
+      tech: "Node, Express, Handlebars, Axios, Javascript, HTML, CSS",
       image: "etaTracker.png",
       description: "•	Helps provide an estimated time of arrival for shipments arriving at the port and moving on the rail in bulk."
     },
@@ -24,7 +24,7 @@ function Portfolio() {
       title: "Calorie Tracker",
       link: "https://uot-project-grp.github.io/project01-calorie-tracker/",
       github: "https://github.com/uot-project-grp/project01-calorie-tracker",
-      tech: "HTML / CSS / JS / JQuery",
+      tech: "JQuery, Javascript, HTML, CSS",
       image: "CalTracker.png",
       description: "•	Allows users to set calorie targets, track daily calorie consumption, and track consumption with tables and graphs."
     },
@@ -32,7 +32,7 @@ function Portfolio() {
       title: "The Tech Blog",
       link: "https://pure-eyrie-01841.herokuapp.com/",
       github: "https://github.com/jamwalab/theTechBlog",
-      tech: "Node, Express, Handlebars, API, MySQL, HTML, CSS",
+      tech: "Node, Express, Handlebars, API, MySQL, Javascript, HTML, CSS",
       image: "theTechBlog.png",
       description: "•	Allows users to register, create blog posts and add comments on blogs posted by other users."
     },
@@ -40,7 +40,15 @@ function Portfolio() {
       title: "Budget Tracker",
       link: "https://limitless-caverns-12620.herokuapp.com/",
       github: "https://github.com/jamwalab/budgetTracker",
-      tech: "Node, Express, Mongoose, PWA, HTML, CSS",
+      tech: "Node, Express, Mongoose, PWA, Javascript, HTML, CSS",
+      image: "budgetTracker.png",
+      description: "•	A progressive web application that works offline, can be installed, and help the user track their budget."
+    },
+    {
+      title: "Note Taker",
+      link: "https://tragically-donair-32034.herokuapp.com/",
+      github: "https://github.com/jamwalab/NoteTaker",
+      tech: "Node, Express, Javascript, HTML, CSS",
       image: "budgetTracker.png",
       description: "•	A progressive web application that works offline, can be installed, and help the user track their budget."
     }
@@ -48,7 +56,7 @@ function Portfolio() {
   //Portfolio page html structure
   return(
     <div>
-      <h2 className="title-spaceSetter">Portfolio</h2>
+      <h3 className="title-spaceSetter">Recent Projects</h3>
       <Projects
         allProjects={allProjects}
       ></Projects>
