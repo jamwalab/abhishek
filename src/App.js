@@ -11,16 +11,16 @@ import Resume from './pages/Resume';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/abhishek">
       <div>
         <Nav></Nav>
         <main>
           <Switch>
-            <Route exact path="/abhishek" component={Home} />
-            <Route exact path="/abhishek/portfolio" component={Portfolio} />
-            <Route exact path="/abhishek/resume" component={Resume} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/resume" component={Resume} />
 
-            <Redirect to="/abhishek" />
+            <Redirect to="/" />
           </Switch>
         </main>
         <Footer></Footer>
