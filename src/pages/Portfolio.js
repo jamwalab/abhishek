@@ -5,6 +5,14 @@ function Portfolio() {
   //List of projects to be displayed
   const allProjects = [
     {
+      title: "Booklyst",
+      link: "https://booklyst-project.herokuapp.com/",
+      github: "https://github.com/group3uoft/final-project",
+      tech: "React, Express, Javascript, GraphQL, NoSQL, Node",
+      image: "booklyst.png",
+      description: "•	The Application that we have created will help find the books you are searching for across multiple sites so that you can buy your book for the cheapest cost. You can search book using text or voice. An intuitive dashboard to track all your favourite and read books!"
+    },
+    {
       title: "Smart Fix",
       link: "https://floating-cove-91289.herokuapp.com/",
       github: "https://github.com/groupsixzerotwo/smart-fix",
@@ -42,14 +50,6 @@ function Portfolio() {
       github: "https://github.com/jamwalab/budgetTracker",
       tech: "Node, Express, Mongoose, PWA, Javascript, HTML, CSS",
       image: "budgetTracker.png",
-      description: "•	A progressive web application that works offline, can be installed, and help the user track their budget."
-    },
-    {
-      title: "Note Taker",
-      link: "https://tragically-donair-32034.herokuapp.com/",
-      github: "https://github.com/jamwalab/NoteTaker",
-      tech: "Node, Express, Javascript, HTML, CSS",
-      image: "noteTaker.png",
       description: "•	A progressive web application that works offline, can be installed, and help the user track their budget."
     }
   ]
