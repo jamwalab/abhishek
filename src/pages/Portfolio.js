@@ -7,8 +7,8 @@ function Portfolio() {
     {
       title: "Booklyst",
       link: "https://booklyst-project.herokuapp.com/",
-      github: "https://github.com/group3uoft/final-project",
-      tech: "React, Express, Javascript, GraphQL, NoSQL, Node",
+      github: "https://github.com/group3uoft/booklyst",
+      tech: "React, Express, Javascript, GraphQL, MongoDB, Web Scraping",
       image: "booklyst.png",
       description: "•	The Application that we have created will help find the books you are searching for across multiple sites so that you can buy your book for the cheapest cost. You can search book using text or voice. An intuitive dashboard to track all your favourite and read books!"
     },
