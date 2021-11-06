@@ -11,7 +11,7 @@ import Resume from './pages/Resume';
 
 function App() {
   return (
-    <Router basename="/abhishek">
+    <Router>
       <div>
         <Nav></Nav>
         <main>

@@ -1,7 +1,7 @@
 {
   "name": "abhishek",
   "version": "0.1.0",
-  "homepage": "http://jamwalab.github.io/abhishek/",
+  "homepage": "http://jamwalab.me",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
