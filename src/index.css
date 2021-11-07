@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 :root {
-  --primary: #07393C;
+  --primary: #385F71;
 
 }
 
 body {
-  background: #F8FAFD;
+  background: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*--GENERAL FLEXBOX SETTINGS--*/
@@ -25,10 +28,30 @@ body {
   justify-content: flex-end;
 }
 
+.flex-col-direction {
+  flex-direction: column;
+}
+
 /*--MAIN CONTAINER SETTINGS--*/
 .container {
   width: 85%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/*--Home Page CSS--*/
+.headline {
+  font-size: 60px;
+  margin: 30px 0 0 150px;
+  font-style: italic;
+}
+.headline p {
+  color: var(--primary);
+  font-weight: 900;
+  margin: 20px;
+}
+
+.headline span {
+  color: #CC8B86;
 }

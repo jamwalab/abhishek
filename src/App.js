@@ -6,17 +6,17 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 
-/*import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
+import Home from './pages/Home';
+/*import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
-          <Switch>
-            <Route exact path="/" component={Home} />
+          
+            
             <Route exact path="/portfolio" component={Portfolio} />
             <Route exact path="/resume" component={Resume} />
 
             <Redirect to="/" />
-          </Switch>
+          
 */
 
 function App() {
@@ -25,7 +25,10 @@ function App() {
       <div className="container">
         <Nav></Nav>
         <main>
-
+        <Switch>
+          <Route exact path="/" component={Home} />
+          
+        </Switch>
         </main>
       </div>
     </Router>
