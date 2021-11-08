@@ -1,13 +1,14 @@
 import React from 'react';
-import profPic from '../assets/images/prof-pic.jpg'
+import profPic from '../assets/images/prof-pic.jpg';
+import GreetingAnimation from '../animations/GreetingAnimation'
 
-//Home Page HTML with About Me section
+//Home Page HTML section
 const Home = function() {
   return(
     <section className="d-flex flex-col-direction headline">
-      <p>Hello</p>
-      <p>I am <span>Abhishek</span></p>
-      <p>A Full Stack Developer</p> 
+      <GreetingAnimation/>
+      <p>I am <span className="myName">Abhishek</span></p>
+      <p className="gradientHighlight">A Full Stack Developer</p> 
     </section>
   );
 };

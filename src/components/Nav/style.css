@@ -2,6 +2,7 @@ header {
   align-items: center;
 }
 
+/*--LOGO SETTINGS--*/
 .siteLogo {
   height: 60px;
   width: 60px;
@@ -13,6 +14,7 @@ header {
   max-height:100%;
 }
 
+/*--NAV BUTTON SETTINGS--*/
 nav li {
   list-style: none;
   cursor: pointer;
@@ -23,10 +25,10 @@ nav a {
   text-decoration: none;
   color: var(--primary);
   font-size: 28px;
-
   position: relative;
 }
 
+/*--UNDERLINE STYLING--*/
 nav a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: -8px;
@@ -35,21 +37,24 @@ nav a:after {
   height: 3px;
   left: 50%;
   position: absolute;
-  background: #CC8B86;
+  background: #EF6351;
   transition: width 0.4s ease 0s, left 0.4s ease 0s;
   width: 0%;
 }
 
+/*--UNDERLINE HOVER EFFECT--*/
 a:hover:after { 
   width: 120%; 
   left: -10%; 
 }
 
+/*--ACTIVE NAV BAR EFFECT--*/
 .navActive { 
-  color: #9db9b9;
+  color: #EF6351;
 }
 
+/*--ACTIVE NAV BAR UNDERLINE--
 .navActive:after { 
   left: -10%; 
   width: 120%;
-}
+}*/

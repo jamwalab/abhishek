@@ -3,9 +3,6 @@ import { Link, NavLink } from 'react-router-dom';
 import siteLogo from '../../assets/icons/siteLogoAJPng.png';
 import './style.css';
 
-//--MATERIAL UI IMPORTS--//
-import {Box} from '@mui/material';
-
 const Nav = function() {
   //return header html with navbar
   return(
@@ -16,9 +13,8 @@ const Nav = function() {
       
       <nav>
         <ul className="d-flex row-direction">
-          <li><NavLink exact to="/about" activeClassName="navActive">About</NavLink></li>
-          <li><NavLink to="/skills" activeClassName="navActive">Skills</NavLink></li>
-          <li><NavLink to="/work" activeClassName="navActive">Projects</NavLink></li>
+          <li><NavLink exact to="/about" activeClassName="navActive">About</NavLink></li>     
+          <li><NavLink to="/projects" activeClassName="navActive">Projects</NavLink></li>
           <li><NavLink to="/contact" activeClassName="navActive">Contact</NavLink></li>
         </ul>
       </nav>
