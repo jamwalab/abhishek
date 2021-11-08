@@ -21,6 +21,16 @@ function Footer() {
             <img src={require(`../../assets/icons/github.svg`).default} alt="github icon" />
           </a>
         </div> 
+        <div> 
+          <a href="https://github.com/jamwalab" target="_blank" rel="noreferrer">
+            <img src={require(`../../assets/icons/instagram.svg`).default} alt="instagram icon" />
+          </a>
+        </div>
+        <div> 
+          <a href="https://github.com/jamwalab" target="_blank" rel="noreferrer">
+            <img src={require(`../../assets/icons/resume-cv.svg`).default} alt="resime download icon" />
+          </a>
+        </div>
       </section>
     </footer>
   );

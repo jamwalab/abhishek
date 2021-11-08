@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled, { keyframes } from "styled-components"
 
 const animation = keyframes`
@@ -46,10 +46,25 @@ const GreetingAnimation = () => {
   const helloArray = "Hello".split("");
   const salutArray = "Salut".split("");
 
-  const {currentArr, setArr} = useState(helloArray)
+  const [currentArr, setArr] = useState(helloArray)
 
+  useEffect (() => {
+    const timer = () => {
+      setTimeout(() => {
+        if (currentArr[0] === "H") {
+          setArr(salutArray);
+        }
+        else {
+          setArr(helloArray);
+        }
+      }, 6000)
+      
+    }
+    timer();
+    clearTimeout(timer)
+  }, [currentArr]);
 
-  return <Wrapper>{helloArray.map((letter, index) => (
+  return <Wrapper>{currentArr.map((letter, index) => (
     <span key={index}>{letter}</span>
   ))}</Wrapper>
 }
