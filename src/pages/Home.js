@@ -1,5 +1,4 @@
 import React from 'react';
-import profPic from '../assets/images/prof-pic.jpg';
 import GreetingAnimation from '../animations/GreetingAnimation'
 
 //Home Page HTML section

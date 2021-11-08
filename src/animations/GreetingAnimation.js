@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import styled, { keyframes } from "styled-components"
 
 const animation = keyframes`
-  0% {opacity: 0; transform: translateY(-80px) skewY(-15deg) rotateZ(-10deg); filter: blur(10px);}
-  25% {opacity: 1; transform: translateY(-0px) skewY(0deg) rotateZ(0deg); filter: blur(0px);}
-  75% {opacity: 1; transform: translateY(-0px) skewY(0deg) rotateZ(0deg); filter: blur(0px);}
-  100% {opacity: 0; transform: translateY(-80px) skewY(-15deg) rotateZ(-10deg); filter: blur(10px);}
+  0% {opacity: 0; transform: translateY(-40px) skewY(-15deg) rotateZ(-10deg); filter: blur(10px);}
+  20% {opacity: 1; transform: translateY(-0px) skewY(0deg) rotateZ(0deg); filter: blur(0px);}
+  80% {opacity: 1; transform: translateY(-0px) skewY(0deg) rotateZ(0deg); filter: blur(0px);}
+  100% {opacity: 0; transform: translateY(-40px) skewY(-15deg) rotateZ(-10deg); filter: blur(10px);}
 `;
 
 /*
@@ -48,24 +48,17 @@ const GreetingAnimation = () => {
 
   const [currentArr, setArr] = useState(helloArray)
 
-  useEffect (() => {
-    const timer = () => {
-      setTimeout(() => {
-        if (currentArr[0] === "H") {
-          setArr(salutArray);
-        }
-        else {
-          setArr(helloArray);
-        }
-      }, 6000)
-      
+  const changeArr = (index) => {
+    if (currentArr[0] === "H" && index === 0) {
+      setArr(salutArray);
     }
-    timer();
-    clearTimeout(timer)
-  }, [currentArr]);
+    else if (currentArr[0] === "S" && index === 0) {
+      setArr(helloArray);
+    }
+  }
 
   return <Wrapper>{currentArr.map((letter, index) => (
-    <span key={index}>{letter}</span>
+    <span key={index} onAnimationIteration={() => changeArr(index)}>{letter}</span>
   ))}</Wrapper>
 }
 

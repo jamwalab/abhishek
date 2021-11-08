@@ -63,17 +63,27 @@ body {
   color: var(--primary);
 }
 
+/*--DROP TEXT ANIMATION--*/
+/* The animation code */
+@keyframes dropText {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 /*--Text Gradient Setup--*/
 .myName {
   padding: 0 3px;
   background-image: linear-gradient(60deg, var(--secondary), #e6a19d, var(--secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation-name: dropText;
+  animation-duration: 2s;
 }
 
 .gradientHighlight {
   background-image: linear-gradient(60deg, var(--primary), #85b1b1, var(--primary));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
+  -webkit-text-fill-color: transparent;  
+  animation-name: dropText;
+  animation-duration: 2s;
 }
