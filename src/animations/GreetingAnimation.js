@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled, { keyframes } from "styled-components"
 
 const animation = keyframes`
@@ -15,12 +15,12 @@ const animation = keyframes`
   100% {opacity: 0; transform: translateY(-50px) skewY(10deg) skewX(10deg) rotateZ(30deg); filter: blur(10px);}
   */
 
-const Wrapper = styled.p`  
+const Wrapper = styled.span`  
   span {
     display: inline-block;
     opacity: 0;
     animation-name: ${animation};
-    animation-duration: 8s;
+    animation-duration: 6s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -43,10 +43,13 @@ const Wrapper = styled.p`
 `;
 
 const GreetingAnimation = () => {
-  const wordArray = "Hello".split("");
+  const helloArray = "Hello".split("");
+  const salutArray = "Salut".split("");
+
+  const {currentArr, setArr} = useState(helloArray)
 
 
-  return <Wrapper>{wordArray.map((letter, index) => (
+  return <Wrapper>{helloArray.map((letter, index) => (
     <span key={index}>{letter}</span>
   ))}</Wrapper>
 }

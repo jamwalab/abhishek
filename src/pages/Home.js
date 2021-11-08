@@ -6,9 +6,9 @@ import GreetingAnimation from '../animations/GreetingAnimation'
 const Home = function() {
   return(
     <section className="d-flex flex-col-direction headline">
-      <GreetingAnimation/>
-      <p>I am <span className="myName">Abhishek</span></p>
-      <p className="gradientHighlight">A Full Stack Developer</p> 
+      
+      <p><GreetingAnimation/><span className="gradientHighlight">, I'm </span><span className="myName">Abhishek</span>.</p>
+      <p className="gradientHighlight">I'm a full-stack developer.</p> 
     </section>
   );
 };
