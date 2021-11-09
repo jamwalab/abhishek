@@ -12,7 +12,52 @@ const About = () => {
       </article>
       <article>
         <h3>SKILLS</h3>
-        <p>Programming Languages: JavaScript ES6+, Python, Visual Basic Application (VBA), HTML/CSS</p>
+        <div className="skillImages">
+          <div className="eachSkillImage">
+            <img src={require(`../assets/icons/icon_javascript.svg`).default} alt="JavaScript icon" />
+            <span className="iconToolTip">JavaScript</span>
+          </div>
+          <div className="eachSkillImage">
+            <img src={require(`../assets/icons/icon_python.svg`).default} alt="JavaScript icon" />
+            <span className="iconToolTip">JavaScript</span>
+          </div>
+          <div className="eachSkillImage">
+            <img src={require(`../assets/icons/icon_react.svg`).default} alt="JavaScript icon" />
+            <span className="iconToolTip">JavaScript</span>
+          </div>
+          <div className="eachSkillImage">
+            <img src={require(`../assets/icons/icon_html5.svg`).default} alt="JavaScript icon" />
+            <span className="iconToolTip">JavaScript</span>
+          </div>
+          <div className="eachSkillImage">
+            <img src={require(`../assets/icons/icon_css3.svg`).default} alt="JavaScript icon" />
+            <span className="iconToolTip">JavaScript</span>
+          </div>
+          <div className="eachSkillImage">
+            <img src={require(`../assets/icons/icon_nodejs.svg`).default} alt="JavaScript icon" />
+            <span className="iconToolTip">JavaScript</span>
+          </div>
+          <div className="eachSkillImage">
+            <img src={require(`../assets/icons/icon_django.svg`).default} alt="JavaScript icon" />
+            <span className="iconToolTip">JavaScript</span>
+          </div>
+          <div className="eachSkillImage">
+            <img src={require(`../assets/icons/icon_mysql.svg`).default} alt="JavaScript icon" />
+            <span className="iconToolTip">JavaScript</span>
+          </div>
+          <div className="eachSkillImage">
+            <img src={require(`../assets/icons/icon_mongodb.svg`).default} alt="JavaScript icon" />
+            <span className="iconToolTip">JavaScript</span>
+          </div>
+          <div className="eachSkillImage">
+            <img src={require(`../assets/icons/icon_graphql.svg`).default} alt="JavaScript icon" />
+            <span className="iconToolTip">JavaScript</span>
+          </div>
+          <div className="eachSkillImage lighten">
+            <img src={require(`../assets/icons/icon_aws.svg`).default} alt="JavaScript icon" />
+            <span className="iconToolTip">JavaScript</span>
+          </div>
+        </div>
       </article>
     </section>
   )
