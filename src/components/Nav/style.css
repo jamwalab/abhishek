@@ -37,7 +37,7 @@ nav a:after {
   height: 3px;
   left: 50%;
   position: absolute;
-  background: #EF6351;
+  background: var(--secondary);
   transition: width 0.4s ease 0s, left 0.4s ease 0s;
   width: 0%;
 }
@@ -50,7 +50,7 @@ a:hover:after {
 
 /*--ACTIVE NAV BAR EFFECT--*/
 .navActive { 
-  color: #EF6351;
+  color: var(--secondary);
 }
 
 /*--ACTIVE NAV BAR UNDERLINE--

@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import styled, { keyframes } from "styled-components"
 
 const animation = keyframes`
-  0% {opacity: 0; transform: translateY(-40px) skewY(-15deg) rotateZ(-10deg); filter: blur(10px);}
+  0% {opacity: 0; transform: translateY(-20px) skewY(-15deg) rotateZ(-10deg); filter: blur(10px);}
   20% {opacity: 1; transform: translateY(-0px) skewY(0deg) rotateZ(0deg); filter: blur(0px);}
   80% {opacity: 1; transform: translateY(-0px) skewY(0deg) rotateZ(0deg); filter: blur(0px);}
-  100% {opacity: 0; transform: translateY(-40px) skewY(-15deg) rotateZ(-10deg); filter: blur(10px);}
+  100% {opacity: 0; transform: translateY(-20px) skewY(-15deg) rotateZ(-10deg); filter: blur(10px);}
 `;
 
 /*

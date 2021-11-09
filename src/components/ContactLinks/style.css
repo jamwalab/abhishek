@@ -1,15 +1,11 @@
-footer {
+.contactLinks {
   position: absolute;
   bottom: 0;
   width: 85%;
   min-height: 80px;
   max-width: 1200px;
-}
-
-.contactLinks {
   align-items: center;
-  justify-content: center;
-  
+  justify-content: center;  
 }
 
 .contactLinks img { 
@@ -19,7 +15,7 @@ footer {
   justify-content: center;
   padding: 0 10px;
   opacity: 1;
-  filter: invert(29%) sepia(30%) saturate(662%) hue-rotate(154deg) brightness(70%) contrast(92%);
+  filter: invert(99%) sepia(0%) saturate(5629%) hue-rotate(267deg) brightness(98%) contrast(106%);
 }
 
 .contactLinks a { 
@@ -28,14 +24,14 @@ footer {
 
 .contactLinks a:hover img { 
   transform: scale(1.1);
-  transition: all .5s;
+  transition: all .3s;
 }
 
 /*--TOOLTIP SETTINGS--*/
 .iconToolTip {
   visibility: hidden;
   width: 120px;
-  color: #85b1b1;
+  color: #ebebeb;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;

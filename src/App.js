@@ -4,9 +4,12 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 
 //--IMPORT COMPONENTS--//
 import Nav from './components/Nav';
-import Footer from './components/Footer';
+//import Footer from './components/Footer';
 
+//--IMPORT PAGES--//
 import Home from './pages/Home';
+import About from './pages/About';
+
 /*import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
@@ -27,10 +30,9 @@ function App() {
         <main>
         <Switch>
           <Route exact path="/" component={Home} />
-          
+          <Route exact path="/about" component={About} />
         </Switch>
         </main>
-        <Footer/>
       </div>
     </Router>
     
