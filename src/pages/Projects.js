@@ -1,5 +1,5 @@
 import React from 'react';
-import Projects from '../components/Projects'
+import Projects from '../components/eachProject'
 
 function Portfolio() {
   //List of projects to be displayed
@@ -10,7 +10,7 @@ function Portfolio() {
       github: "https://github.com/group3uoft/booklyst",
       tech: "React, Express, Javascript, GraphQL, MongoDB, Web Scraping",
       image: "booklyst.png",
-      description: "•	The Application that we have created will help find the books you are searching for across multiple sites so that you can buy your book for the cheapest cost. You can search book using text or voice. An intuitive dashboard to track all your favourite and read books!"
+      description: "The Application that we have created will help find the books you are searching for across multiple sites so that you can buy your book for the cheapest cost. You can search book using text or voice. An intuitive dashboard to track all your favourite and read books!"
     },
     {
       title: "Smart Fix",
@@ -55,8 +55,8 @@ function Portfolio() {
   ]
   //Portfolio page html structure
   return(
-    <div>
-      <h3 className="title-spaceSetter">Recent Projects</h3>
+    <div className="aboutMeSection">
+      <h3 className="title-spaceSetter">Recent Works</h3>
       <Projects
         allProjects={allProjects}
       ></Projects>

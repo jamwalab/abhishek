@@ -12,7 +12,7 @@ const About = () => {
       </article>
       <article>
         <h3>SKILLS</h3>
-        <div className="skillImages">
+        <div className="skillImages d-flex">
           <div className="eachSkillImage">
             <img src={require(`../assets/icons/icon_javascript.svg`).default} alt="JavaScript icon" />
             <span className="iconToolTip">JavaScript</span>

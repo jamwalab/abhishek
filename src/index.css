@@ -107,8 +107,6 @@ body {
 /*--ABOUT ME SKILLS SECTION--*/
 
 .skillImages {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   animation-name: appearText;
   animation-duration: 6s;

@@ -4,7 +4,7 @@ import './style.css';
 function Projects({allProjects}) {
   //Map the project array and generate project blocks
   return(
-    <section className="flex-row">
+    <section className="d-flex">
       {allProjects.map((project) => (
         <article className="img-container" key={project.title}>
           <img

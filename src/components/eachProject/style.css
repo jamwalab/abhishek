@@ -1,11 +1,12 @@
 /* Portfolio page styling */
 
 .img-container {
-  padding: 10px;
+  padding: 0;
   flex: 1 50%;
   display: grid;
 }
 
+/*
 .img-container:hover .img-description {
   opacity: 1;
   transition: 0.5s;
@@ -82,4 +83,4 @@
   .projectTitle p {
     margin-left: 10px;
   }
-}
+}*/
