@@ -4,7 +4,7 @@ import './style.css';
 function Projects({allProjects}) {
   //Map the project array and generate project blocks
   return(
-    <section className="d-flex">
+    <section className="d-flex projectDisplaySection">
       {allProjects.map((project) => (
         <article className="img-container" key={project.title}>
           <img
@@ -13,6 +13,16 @@ function Projects({allProjects}) {
               className="projectPrev"
           ></img>
         
+
+        </article>
+      ))}
+    </section>
+  );
+};
+
+export default Projects;
+
+/*
           <div className="img-description">
             <div className="img-text">
               <h4>{project.title}</h4>        
@@ -27,10 +37,4 @@ function Projects({allProjects}) {
               </div>
             </div>
           </div> 
-        </article>
-      ))}
-    </section>
-  );
-};
-
-export default Projects;
+          */
