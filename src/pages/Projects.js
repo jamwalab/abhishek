@@ -56,7 +56,7 @@ function Portfolio() {
   //Portfolio page html structure
   return(
     <div className="aboutMeSection">
-      <h3>Recent Works</h3>
+      <h3>RECENT WORKS</h3>
       <Projects
         allProjects={allProjects}
       ></Projects>

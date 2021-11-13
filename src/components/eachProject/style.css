@@ -21,6 +21,7 @@
   min-height: 280px;
   max-height: 280px;
   display: block;
+  opacity: 0.8;
 }
 
 .projectPrev, .img-description {
@@ -57,7 +58,7 @@
 
 @keyframes appearSlowly {
   0% {opacity: 0; }
-  50% {opacity: 0; }
+  33% {opacity: 0; }
   100% {opacity: 1;}
 }
 
@@ -74,7 +75,7 @@
 
 .img-container:hover .imgTextTop {
   animation: dropAnimation 0.5s linear forwards;
-  opacity: 1;
+  opacity: 1.5s;
 }
 
 .img-container:hover .projectLink {
