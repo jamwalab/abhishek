@@ -2,12 +2,15 @@
 
 .projectDisplaySection {
   padding: 0;
+  animation-name: appearText;
+  animation-duration: 2s;
 }
 
 .img-container {
-  flex: 30%;
-  border: solid 1px var(--secondary);
+  flex: 47%;
   margin: 5px;
+  display: grid;
+  border: var(--secondary) solid 1px;
 }
 
 .projectPrev {
@@ -15,24 +18,93 @@
   width: 100%;
   object-fit: cover;
   object-position: top;
-  min-height: 220px;
-  max-height: 220px;
+  min-height: 280px;
+  max-height: 280px;
   display: block;
-}
-/*
-.img-container:hover .img-description {
-  opacity: 1;
-  transition: 0.5s;
 }
 
 .projectPrev, .img-description {
-  border: solid 2px var(--pText-color);
-  border-radius: 20px;
   grid-row: 1;
   grid-column: 1;
 }
 
+.img-container:hover .projectPrev {
+  opacity: 0.2;
+  transition: all 0.5s;
+}
 
+.img-description {
+  position: relative;
+  z-index: 98;
+  opacity: 1;
+  justify-content: center;
+}
+
+.img-text {
+  position: absolute;
+  top: 30px;
+  padding: 5px 10px 5px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@keyframes dropAnimation {
+  0% {opacity: 0; transform: translateY(-60px); filter: blur(10px);}
+  100% {opacity: 1; transform: translateY(0px); filter: blur(0px);}
+}
+
+@keyframes appearSlowly {
+  0% {opacity: 0; }
+  50% {opacity: 0; }
+  100% {opacity: 1;}
+}
+
+.imgTextTop h4 {
+  color: var(--secondary);
+  padding: 0;
+  margin: 20px 0 10px 0;
+  font-size: 28px;
+}
+
+.imgTextTop, .projectLink {
+  opacity: 0;
+}
+
+.img-container:hover .imgTextTop {
+  animation: dropAnimation 0.5s linear forwards;
+  opacity: 1;
+}
+
+.img-container:hover .projectLink {
+  animation: appearSlowly 1s linear forwards;
+  opacity: 1;
+}
+
+.projectLink {
+  margin: 40px 0 0 0;
+}
+
+.projectLink a {
+  margin: 0 20px;
+}
+
+.projectLink a img{
+  max-width: 50px;
+  min-width: 50px;
+  filter: invert(99%) sepia(0%) saturate(5629%) hue-rotate(267deg) brightness(98%) contrast(106%);
+}
+
+/*
+.img-container:hover img {
+  opacity: 0.2;
+}
+
+.img-container:hover .img-description {
+  opacity: 1;
+  transition: 0.5s;
+}
 
 .img-description {
   display: flex;

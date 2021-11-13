@@ -12,8 +12,22 @@ function Projects({allProjects}) {
               alt={project.title}
               className="projectPrev"
           ></img>
-        
-
+          <div className="img-description d-flex">
+            <div className="img-text d-flex">
+              <div className="imgTextTop">
+                <h4>{project.title}</h4>        
+                <p>{project.tech}</p>
+              </div>
+              <div className="projectLink">
+                <a href={project.github} target="_blank" rel="noreferrer">
+                  <img src={require(`../../assets/icons/github.svg`).default} alt="github icon" />
+                </a>
+                <a href={project.link} target="_blank" rel="noreferrer">
+                  <img src={require(`../../assets/icons/www.svg`).default} alt="github icon" />
+                </a>
+              </div>
+            </div>
+          </div>
         </article>
       ))}
     </section>
