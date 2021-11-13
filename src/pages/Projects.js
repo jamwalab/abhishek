@@ -8,7 +8,7 @@ function Portfolio() {
       title: "Booklyst",
       link: "https://booklyst-project.herokuapp.com/",
       github: "https://github.com/group3uoft/booklyst",
-      tech: "React, Javascript, GraphQL, MongoDB",
+      tech: "React, Node, GraphQL",
       image: "booklyst.png",
       description: "The Application that we have created will help find the books you are searching for across multiple sites so that you can buy your book for the cheapest cost. You can search book using text or voice. An intuitive dashboard to track all your favourite and read books!"
     },
@@ -16,7 +16,7 @@ function Portfolio() {
       title: "Smart Fix",
       link: "https://floating-cove-91289.herokuapp.com/",
       github: "https://github.com/groupsixzerotwo/smart-fix",
-      tech: "Node, Handlebars, MySQL, Javascript",
+      tech: "Node, Handlebars, MySQL",
       image: "smartFix.png",
       description: "•	A website that helps customers connect with service providers for household repairs and maintenance."
     },
@@ -40,7 +40,7 @@ function Portfolio() {
       title: "The Tech Blog",
       link: "https://pure-eyrie-01841.herokuapp.com/",
       github: "https://github.com/jamwalab/theTechBlog",
-      tech: "Node, Handlebars, MySQL, Javascript",
+      tech: "Node, Handlebars, MySQL",
       image: "theTechBlog.png",
       description: "•	Allows users to register, create blog posts and add comments on blogs posted by other users."
     },
@@ -48,19 +48,19 @@ function Portfolio() {
       title: "Budget Tracker",
       link: "https://limitless-caverns-12620.herokuapp.com/",
       github: "https://github.com/jamwalab/budgetTracker",
-      tech: "Node, Javascript, MongoDB, HTML",
+      tech: "Node, Javascript, MongoDB",
       image: "budgetTracker.png",
       description: "•	A progressive web application that works offline, can be installed, and help the user track their budget."
     }
   ]
   //Portfolio page html structure
   return(
-    <div className="aboutMeSection">
+    <section className="aboutMeSection">
       <h3>RECENT WORKS</h3>
       <Projects
         allProjects={allProjects}
       ></Projects>
-    </div>  
+    </section>  
   );
 };
 

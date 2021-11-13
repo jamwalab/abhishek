@@ -10,7 +10,7 @@ import Nav from './components/Nav';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
-
+import ContactSection from './pages/ContactSection';
 /*
 import Resume from './pages/Resume';
 
@@ -33,6 +33,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />
+          <Route exact path="/contact" component={ContactSection} />
         </Switch>
         </main>
       </div>
