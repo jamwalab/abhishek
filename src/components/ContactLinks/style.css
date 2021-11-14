@@ -48,3 +48,14 @@
   visibility: visible;
 }
 
+@media screen and (max-width: 480px) {  
+  .normalIcons {
+    min-height: 35px;
+    max-height: 35px;
+  }
+  
+  .whitenIcons {
+    min-height: 30px;
+    max-height: 30px;
+  }
+}

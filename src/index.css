@@ -231,11 +231,60 @@ main {
   .contactSection, .copyrightStatement{
     width: 100%;
   }
+
+  .aboutMeSection {
+    margin: 30px 30px 0 30px;
+    font-size: 22px;
+  }
+  
+  .aboutMeSection h3, .projectSection h3 {
+    font-size: 30px;
+    margin: 28px 0;
+  }
+
+  .eachSkillImage img {
+    min-height: 80px;
+    max-height: 80px;
+  }
+
+  .contactStatement {
+    font-size: 20px;
+  }
+  
+  .contactSectionLeft, .contactSectionRight {
+    flex: 0 49%;
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 720px) {
   .headline {
     font-size: 40px;
+  }
+
+  .aboutMeSection {
+    margin: 20px 20px 0 20px;
+    font-size: 20px;
+  }
+
+  .aboutMeSection h3, .projectSection h3 {
+    font-size: 28px;
+    margin: 24px 0;
+  }
+
+  .eachSkillImage img {
+    min-height: 70px;
+    max-height: 70px;
+  }
+
+  .contactStatement {
+    font-size: 18px;
+  }
+  
+  .contactSectionLeft, .contactSectionRight {
+    flex: 1 100%;
+    min-height: 30vh;
+    align-items: center;
   }
 }
 
@@ -243,16 +292,84 @@ main {
   .headline {
     font-size: 30px;
   }
+
+  .aboutMeSection {
+    margin: 10px 20px 0 20px;
+    font-size: 18px;
+  }
+
+  .aboutMeSection h3, .projectSection h3 {
+    font-size: 26px;
+    margin: 20px 0;
+  }
+  .eachSkillImage img {
+    min-height: 60px;
+    max-height: 60px;
+  }
+
+  .contactStatement {
+    font-size: 16px;
+  }
+  
+  .contactSectionLeft, .contactSectionRight {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 480px) {  
   .headline {
     font-size: 25px;
   }
+
+  .aboutMeSection {
+    margin: 10px 15px 0 15px;
+    font-size: 16px;
+  }
+
+  .aboutMeSection h3, .projectSection h3 {
+    font-size: 24px;
+    margin: 16px 0;
+  }
+  .eachSkillImage img {
+    min-height: 50px;
+    max-height: 50px;
+  }
+
+  .copyrightStatement {
+    font-size: 12px;
+  }
+
 }
 
 @media screen and (max-width: 380px) {  
+  .aboutMeSection {
+    margin: 10px 10px 0 10px;
+    font-size: 14px;
+  }
+
+  .aboutMeSection h3, .projectSection h3 {
+    font-size: 22px;
+    margin: 12px 0;
+  }
+
   .headline {
     font-size: 20px;
+  }
+
+  .eachSkillImage img {
+    min-height: 40px;
+    max-height: 40px;
+  }
+
+  .contactStatement {
+    font-size: 14px;
+  }
+  
+  .contactSectionLeft, .contactSectionRight {
+    font-size: 12px;
+  }
+
+  .copyrightStatement {
+    font-size: 10px;
   }
 }
