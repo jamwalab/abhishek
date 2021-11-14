@@ -53,8 +53,72 @@ a:hover:after {
   color: var(--secondary);
 }
 
-/*--ACTIVE NAV BAR UNDERLINE--
-.navActive:after { 
-  left: -10%; 
-  width: 120%;
-}*/
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 980px) {
+  .siteLogo {
+    height: 50px;
+    width: 50px;
+    margin: 10px 25px;
+  }
+  nav a {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .siteLogo {
+    height: 45px;
+    width: 45px;
+    margin: 10px 20px;
+  }
+  nav a {
+    font-size: 24px;
+  }
+  nav li {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {  
+  .siteLogo {
+    height: 40px;
+    width: 40px;
+    margin: 10px 15px;
+  }
+  nav a {
+    font-size: 22px;
+  }
+  nav li {
+    margin: 0 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {  
+  .siteLogo {
+    height: 35px;
+    width: 35px;
+    margin: 10px 10px;
+  }
+  nav a {
+    font-size: 20px;
+  }
+  nav li {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {  
+  .siteLogo {
+    height: 30px;
+    width: 30px;
+  }
+  nav a {
+    font-size: 18px;
+  }
+  nav li {
+    margin: 0 5px;
+  }
+}
