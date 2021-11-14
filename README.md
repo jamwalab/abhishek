@@ -14,7 +14,7 @@
 
 ## Link
 
-[Link to the portfolio page](https://jamwalab.github.io/abhishek/)
+[Link to the portfolio page](http://jamwalab.me)
 
 ![Homepage](./src/assets/images/homepage.gif)
 
@@ -23,7 +23,7 @@
 * Responsive layouts.
 * Resume available for download in pdf.
 * Link to my email address, github profile and linkedin.
-* Subtle animations added.
+* Animated text and effects.
 
 ## Credits
 #### React library and components
