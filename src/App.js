@@ -4,19 +4,17 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 
 //--IMPORT COMPONENTS--//
 import Nav from './components/Nav';
-//import Footer from './components/Footer';
+//import ContactLinks from './components/ContactLinks';
 
 //--IMPORT PAGES--//
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import ContactSection from './pages/ContactSection';
+import Copyright from './components/Copyright';
 /*
 import Resume from './pages/Resume';
-
-          
-            
-            
+       
             <Route exact path="/resume" component={Resume} />
 
             <Redirect to="/" />
@@ -36,9 +34,10 @@ function App() {
           <Route exact path="/contact" component={ContactSection} />
         </Switch>
         </main>
+        <Copyright/>
       </div>
-    </Router>
-    
+      
+    </Router>  
   );
 }
 
